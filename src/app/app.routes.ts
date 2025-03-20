@@ -5,7 +5,8 @@ import { GuestComponent } from './components/guest/guest.component';
 import { UsersComponent } from './components/users/users.component';
 import { AuthComponent } from './auth/auth.component';
 
-const routes: Routes = [
+
+export const routes: Routes = [
   { path: '', component: LayoutComponent },
   { path: 'guest', component: GuestComponent },
   { path: 'users', component: UsersComponent },
@@ -16,4 +17,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
